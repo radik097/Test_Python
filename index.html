@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Test_Python / Misc — Dr Akhtar Jalbani</title>
+  <meta name="description" content="Explained examples from the Misc folder of akjalbani/Test_Python.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Welcome to Dr Akhtar Jalbani's Page</h1>
+      <p class="subtitle">Lecturer - IT</p>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#topics">Topics</a>
+        <a href="#examples">Examples</a>
+        <a href="#playground">Python Playground</a>
+        <a href="https://github.com/akjalbani/Test_Python/tree/master/Misc" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="about" class="section">
+      <h2>Test_Python / Misc</h2>
+      <p>
+        This page explains the miscellaneous Python examples stored in the
+        <code>Misc</code> directory of the <strong>Test_Python</strong> repository.
+        The examples cover Python fundamentals, operating-system tasks,
+        networking, cryptography, log analysis, reconnaissance, email automation,
+        data handling and unit testing.
+      </p>
+      <p class="notice">
+        Some scripts interact with the operating system, network, credentials or external services.
+        Those examples are documented for educational review only and are not executed in the browser.
+      </p>
+    </section>
+
+    <section id="topics" class="section">
+      <h2>Topics covered</h2>
+      <div class="topic-grid">
+        <article><h3>Python basics</h3><p>Loops, tuples, random values, input handling and small text-based programs.</p></article>
+        <article><h3>Cryptography</h3><p>Simple Caesar-cipher examples that demonstrate character substitution.</p></article>
+        <article><h3>Operating system</h3><p>Platform information, CPU usage, disk space, directory creation and file operations.</p></article>
+        <article><h3>Networking</h3><p>Hostname lookup, URL checking and network-related examples.</p></article>
+        <article><h3>Log analysis</h3><p>Reading logs and experimenting with traffic or denial-of-service indicators.</p></article>
+        <article><h3>Reconnaissance</h3><p>Introductory reconnaissance scripts for authorised security learning.</p></article>
+        <article><h3>Testing</h3><p>Small pytest examples for validating arithmetic functions.</p></article>
+        <article><h3>Packaging</h3><p>Notes about PyInstaller, NSIS and turning Python scripts into executables.</p></article>
+      </div>
+    </section>
+
+    <section id="examples" class="section">
+      <div class="section-head">
+        <h2>Explained examples</h2>
+        <input id="search" type="search" placeholder="Search examples..." aria-label="Search examples">
+      </div>
+      <div id="filters" class="filters"></div>
+      <div id="example-list" class="example-list"></div>
+    </section>
+
+    <section id="playground" class="section">
+      <h2>Python Playground</h2>
+      <p>
+        Safe, browser-compatible examples run locally using Pyodide.
+        System, network, email and security-sensitive scripts are intentionally excluded.
+      </p>
+
+      <div class="playground">
+        <div class="playground-toolbar">
+          <label for="example-select">Example:</label>
+          <select id="example-select"></select>
+          <button id="run-btn" type="button">Run</button>
+          <button id="reset-btn" type="button">Reset</button>
+        </div>
+        <textarea id="editor" spellcheck="false" aria-label="Python editor"></textarea>
+        <pre id="output" aria-live="polite">Pyodide is not loaded yet.</pre>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>How to use the repository</h2>
+      <ol>
+        <li>Install Python 3.</li>
+        <li>Clone or download the repository.</li>
+        <li>Open a terminal in the selected example folder.</li>
+        <li>Review the source code before execution.</li>
+        <li>Install only the packages required by that example.</li>
+        <li>Run security and networking examples only in an authorised lab environment.</li>
+      </ol>
+      <pre class="command">git clone https://github.com/akjalbani/Test_Python.git
+cd Test_Python/Misc
+python path/to/example.py</pre>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Dr Akhtar Jalbani — Cyber Security, Cloud Computing and Python Education</p>
+      <p><a href="https://akjalbani.github.io/" target="_blank" rel="noreferrer">Main website</a> ·
+      <a href="https://github.com/akjalbani/Test_Python" target="_blank" rel="noreferrer">Repository</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
